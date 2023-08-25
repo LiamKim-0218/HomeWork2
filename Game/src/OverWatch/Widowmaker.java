@@ -1,33 +1,13 @@
 package OverWatch;
 
-public class Widowmaker {
-	String name = "Amélie Guillard Lacroix";
-	String nameKorean = "아멜리 기야르 라크루아";
-	String gender = "여성";
-	int age = 33;
-	String prevJob = "발레 무용수(이전 기록)";
-	String job = "암살자";
-	String nationality = "프랑스";
-	int height = 175;
-	String baseOfActivity = "프랑스, 안시";
-	String belong = "탈론";
-	String family = "제라르 라크루아(남편)";
-	String SymbolicColor = "#8B3F8F Color #C388C5 sRGB Color";
-
-	// 지속 능력
-	class Sustainability {
-		String explain = "적을 처치하면 일시적으로 재장전 속도가 대폭 증가합니다.";
-		// 지속 시간 : 처치 후 2.5초
-		double duration = 2.5;
-		// 재장전 속도 증가 : 35%
-		int IncreasedReloadSpeed = 35;
-	}
-
-	// 궁극기 게이지 (내가 만든 임의의 변수 나중에 궁극기 충전량과 어떻게 할지 생각해야함)
-	class Ultimate {
-		int ultimate = 0;
-	}
-
+public class Widowmaker extends OverwatchCharacter {
+	
+	public Widowmaker() {
+        super("Amélie Guillard Lacroix", "아멜리 기야르 라크루아", "여성", 33,
+                "발레 무용수(이전 기록)", "암살자", "프랑스", 175,
+                "프랑스, 안시", "탈론", "제라르 라크루아(남편)",
+                "#8B3F8F Color #C388C5 sRGB Color");
+    }
 	// 기본 무기
 	class BasicWeapon {
 		String explain = "마우스 좌클릭 전자동 돌격 소총입니다.";
@@ -63,52 +43,47 @@ public class Widowmaker {
 
 	}
 
-	// 생명력(내가 만든거)
-	public void WidowmakerHP() {
-		int vitality = 175;
-		double HP = vitality;
-	}
-
 	// 좌Shift - 갈고리 발사
-	class GrapplingHook {
-		String explain = "자신을 벽으로 끌어당기는 갈고리를 발사합니다.";
-		// 재사용 대기시간 12초
-		int cooldownTime = 12;
-		// 이동 속도: 20m/s
-		int speed = 20;
-		// 최대 거리: 20m
-		int maximumDistance = 20;
-	}
+		class GrapplingHook {
+			String explain = "자신을 벽으로 끌어당기는 갈고리를 발사합니다.";
+			// 재사용 대기시간 12초
+			int cooldownTime = 12;
+			// 이동 속도: 20m/s
+			int speed = 20;
+			// 최대 거리: 20m
+			int maximumDistance = 20;
+		}
+		// E - 맹독 지뢰
+		class VenomMine {
+			String explain = "맹독 덫을 배치합니다.";
+			// 공격 유형
+			String attackType = "투사체(낙차 있음,폭발형,자가 피해 없음)";
+			// 재사용 대기시간
+			int CooldownTime = 15;
+			// 투사체 속도 20m/s
+			int ProjectileSpeed = 20;
+			// 중독 지속 시간 5초
+			int PoisoningDuration = 5;
+			// 공격력 초당 15(총 75 최대 5초)
+			int OffensePower = 15;
+			// 내구도 1
+			int durability = 1;
+			// 범위 : 반경3m
+			int range = 3;
+			// 치명타 없음
+			int CriticalStrike = 0;
+		}
 
-	// E - 맹독 지뢰
-	class VenomMine {
-		String explain = "맹독 덫을 배치합니다.";
-		// 공격 유형
-		String attackType = "투사체(낙차 있음,폭발형,자가 피해 없음)";
-		// 재사용 대기시간
-		int CooldownTime = 15;
-		// 투사체 속도 20m/s
-		int ProjectileSpeed = 20;
-		// 중독 지속 시간 5초
-		int PoisoningDuration = 5;
-		// 공격력 초당 15(총 75 최대 5초)
-		int OffensePower = 15;
-		// 내구도 1
-		int durability = 1;
-		// 범위 : 반경3m
-		int range = 3;
-		// 치명타 없음
-		int CriticalStrike = 0;
-	}
+		// Q - 적외선 투시
+		class InflaSight {
+			String explain = "적의 위치를 아군에게 노출시킵니다.";
+			// 궁극기 충전량: 1540 포인트
+			double UltimateChargeAmount = 1540;
+			// 지속 시간: 15초
+			int UltimateDuration = 15;
 
-	// Q - 적외선 투시
-	class InflaSight {
-		String explain = "적의 위치를 아군에게 노출시킵니다.";
-		// 궁극기 충전량: 1540 포인트
-		double UltimateChargeAmount = 1540;
-		// 지속 시간: 15초
-		int UltimateDuration = 15;
-
-	}
+		}
 
 }
+
+

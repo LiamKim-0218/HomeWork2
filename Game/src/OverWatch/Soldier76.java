@@ -1,38 +1,18 @@
 package OverWatch;
 
-public class Soldier76 {
-	String name = "John Francis " + "Jack" + " Morrison";
-	String nameKorean = "존 프랜시스" + "잭" + " 모리슨";
-	String alias = "솔저: 76, 영웅";
-	String gender = "남성";
-	String age = "불명";
-	String prevJob = "군인(이전 기록)";
-	String prevJob1 = "오버워치 사령관(이전 기록)";
-	String job = "무법자(현상 수배범)";
-	String nationality = "미국";
-	int height = 185;
-	String baseOfActivity = "미국, 인디애나 블루밍턴";
-	String prevBelong = "미군(이전 기록)";
-	String belong = "오버워치(이전 기록)";
-	String SymbolicColor = "#445275 Color #8D9AB4 sRGB Color";
-
-	// 지속 능력
-	class Sustainability {
-		String explain = "적을 처치하면 일시적으로 재장전 속도가 대폭 증가합니다.";
-		// 지속 시간 : 처치 후 2.5초
-		double duration = 2.5;
-		// 재장전 속도 증가 : 35%
-		int IncreasedReloadSpeed = 35;
-	}
-
-	// 궁극기 게이지 (내가 만든 임의의 변수 나중에 궁극기 충전량과 어떻게 할지 생각해야함)
-	class Ultimate {
-		int ultimate = 0;
-	}
+public class Soldier76 extends OverwatchCharacter {
+   
+	public Soldier76() {
+        super("John Francis Jack Morrison", "존 프랜시스 잭 모리슨", "솔저 : 76, 영웅", "남성",
+                "불명", "군인(이전 기록)", "오버워치 사령관(이전 기록)",
+                "무법자(현상 수배범)", "미국", 185, "미국, 인디애나 블루밍턴",
+                "미군(이전 기록)", "오버워치(이전 기록)",
+                "#445275 Color #8D9AB4 sRGB Color");
+    }
 
 	// 기본 무기
 	class BasicWeapon {
-		String explain = "마우스 우클릭 전자동 돌격 소총입니다.";
+		String WaeponExplain = "마우스 우클릭 전자동 돌격 소총입니다.";
 		// 탄환 수
 		int shot = 30;
 		// 재장전 시간
@@ -53,7 +33,7 @@ public class Soldier76 {
 
 	// 우클릭 - 나선 로켓(Helix Rocket)
 	class helixRocket {
-		String explain = "폭발성 로켓을 발사합니다.";
+		String RightClickExplain = "폭발성 로켓을 발사합니다.";
 		// 공격 유형
 		String attackType = "투사체(폭발형)";
 		// 재사용 대기시간 : 6초
@@ -73,7 +53,7 @@ public class Soldier76 {
 
 	// 좌Shift - 질주(Sprint)
 	class Sprint {
-		String explain = "전방을 향해 더 빠르게 뜁니다.";
+		String LeftShiftExplain = "전방을 향해 더 빠르게 뜁니다.";
 		// 재사용 대기시간 0초
 		int cooldownTime = 0;
 		// 이동 속도 증가: 전진 시 50%(본인, 8.25m/s)
@@ -84,7 +64,7 @@ public class Soldier76 {
 
 	// E - 생체장(Biotic Field)
 	class BioticField {
-		String explain = "자신과 아군의 생명력을 회복시키는 장을 생성합니다.";
+		String EskillExplain = "자신과 아군의 생명력을 회복시키는 장을 생성합니다.";
 		// 재사용 대기시간 15초
 		int cooldownTime = 15;
 		// 지속 시간 : 처치 후 5초
@@ -97,7 +77,7 @@ public class Soldier76 {
 
 	// Q - 전술 조준경(Tactical Visor)
 	class TacticalVisor {
-		String explain = "시야에 있는 대상들을 자동으로 조준합니다.";
+		String QskillExplain = "시야에 있는 대상들을 자동으로 조준합니다.";
 		// 공격 유형
 		String attackType = "히트스캔";
 		// 궁극기 충전량: 2500 포인트

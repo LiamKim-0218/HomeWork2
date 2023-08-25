@@ -23,11 +23,11 @@ public class Cassidy {
 
 	// 지속 능력
 	class Sustainability {
-		String explain = "적을 처치하면 일시적으로 재장전 속도가 대폭 증가합니다.";
+		String SustainabilityExplain = "적을 처치하면 일시적으로 재장전 속도가 대폭 증가합니다.";
 		// 지속 시간 : 처치 후 2.5초
-		double duration = 2.5;
+		double SustainabilityDuration = 2.5;
 		// 재장전 속도 증가 : 35%
-		int IncreasedReloadSpeed = 35;
+		int SustainabilityIncreasedReloadSpeed = 35;
 	}
 
 	// 궁극기 게이지 (내가 만든 임의의 변수 나중에 궁극기 충전량과 어떻게 할지 생각해야함)
@@ -38,20 +38,20 @@ public class Cassidy {
 	// 기본 무기
 	class PeaceKeeper {
 
-		String explain = "마우스 좌클릭 강력하고 정확도 높은 리볼버입니다.";
-		String explain1 = "마우스 우클릭 남은 총알을 빠르게 난사합니다.";
+		String PeaceKeeperExplain = "마우스 좌클릭 강력하고 정확도 높은 리볼버입니다.";
+		String PeaceKeeperExplain1 = "마우스 우클릭 남은 총알을 빠르게 난사합니다.";
 		// 탄환 수
-		int shot = 6;
+		int PeaceKeeperShot = 6;
 		// 재장전 시간
-		double duration = 1.5;
+		double PeaceKeeperDuration = 1.5;
 
-		String explain_Sub = "[좌클릭 - 단발] 공격 유형: 히트스캔";
+		String PeaceKeeperExplain_Sub = "[좌클릭 - 단발] 공격 유형: 히트스캔";
 		// 공격력: 발당 70(25m)~21(35m)
-		double attackPower = 70;
+		double PeaceKeeperAttackPower = 70;
 		// 공격 속도: 0.5초당 1발(초당 2발, DPS: 140)
-		double attackSpeed = 2;
+		double PeaceKeeperAttackSpeed = 2;
 		// 치명타 판정 : 있음(2배)
-		int CriticalStrike = 2;
+		int PeaceKeeperCriticalStrike = 2;
 
 		String explain1_Sub = "[우클릭 - 난사] 공격 유형: 히트스캔";
 		// 공격력: 공격력: 발당 50(25m)~15(35m)
