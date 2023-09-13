@@ -314,7 +314,7 @@ GIT_ADDRESS
 https://github.com/Natseol
 
 
-8 행이 선택되었습니다.
+8 행이 선택되었습니다
 
 
 
