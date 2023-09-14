@@ -1,5 +1,6 @@
 ## 쿼리문
 
+```
 alter table student drop constraint fk_hobby_to_student;
 
 drop table student_hobby;
@@ -77,7 +78,7 @@ join hobby on hobby.id = student_hobby.hobby_id ;
 select * from student where rownum < 4 and name like '김%';
 
 select count(*) from student where name like '김%';
-
+```
 
 ### tip
 - ReadMe.md(readme.md) 파일을 잘 작성하면 GitHub가 블로그를 대신할 수 있다.
