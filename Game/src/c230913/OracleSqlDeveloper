@@ -1,8 +1,5 @@
 ## OracleSQLDEVELOPER
 
-
-```sql
-
 C:\Users\KGA>sqlplus
 
 사용자명 입력: java
@@ -481,4 +478,3 @@ SQL> insert into hobby (hobby_id, hobby_name, hobby_explain,average_time,locatio
 SQL> commit;
 
 커밋이 완료되었습니다.
-```
